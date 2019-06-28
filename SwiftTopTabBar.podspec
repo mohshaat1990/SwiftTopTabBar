@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftTopTabBar'
-  s.version          = '0.1.0'
+  s.version          = '1.0'
   s.summary          = 'Swift Top Tab Bar'
   s.description      = <<-DESC
 SwiftTopTabBar is swift library to create top tab bar like android in iOS
