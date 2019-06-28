@@ -9,6 +9,6 @@
 import UIKit
 
 public class TabBarCollectionViewCellTitle: UICollectionViewCell {
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet public weak var titleLabel: UILabel!
     public static let resusableName = String(describing: TabBarCollectionViewCellTitle.self)
 }

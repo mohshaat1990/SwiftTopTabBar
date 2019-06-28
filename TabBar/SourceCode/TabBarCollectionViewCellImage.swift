@@ -10,5 +10,5 @@ import UIKit
 
 public class TabBarCollectionViewCellImage: UICollectionViewCell {
     public static let resusableName = String(describing: TabBarCollectionViewCellImage.self)
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet public weak var imageView: UIImageView!
 }

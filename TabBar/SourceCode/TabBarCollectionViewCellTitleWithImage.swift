@@ -10,6 +10,6 @@ import UIKit
 
 public class TabBarCollectionViewCellTitleWithImage: UICollectionViewCell {
     public static let resusableName = String(describing: TabBarCollectionViewCellTitleWithImage.self)
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet public weak var imageView: UIImageView!
+    @IBOutlet public weak var titleLabel: UILabel!
 }

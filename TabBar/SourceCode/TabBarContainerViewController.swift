@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol TabBarDataSourse {
+public protocol TabBarDataSourse {
     func  configureTabCell( collectionView: UICollectionView, indexpath:IndexPath)  -> UICollectionViewCell
     func cellTabName() -> String
 }
@@ -22,27 +22,26 @@ enum MoveType {
     case topBarSelection
 }
 
-public class TabBarContainerViewController: UIViewController {
-    var topBarView: UICollectionView!
-    var barcontainer: UIScrollView!
-    var indicatorView: UIView!
+ open class TabBarContainerViewController: UIViewController {
+    public var topBarView: UICollectionView!
+    public var barcontainer: UIScrollView!
     var indictaorPage: UIView?
-    var selectedIndicatorColor = UIColor.blue
-    var tabBarShouldFillWidth = true
-    var tabBarWidth = 0.0
+    public var selectedIndicatorColor = UIColor.blue
+    public var tabBarShouldFillWidth = true
+    public var tabBarWidth = 0.0
     var currentPage = 0
     var numberOfItemsAppearInOnePage = 0
-    var indicatorHeight: CGFloat = 1.0
+    public var indicatorHeight: CGFloat = 1.0
     var moveType: MoveType = .containerScrollMove
     var minimumLineSpacing: CGFloat = 0.0
     var minimumInteritemSpacing: CGFloat = 0.0
     private var viewControllers: [UIViewController]  = [UIViewController]()
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         
     }
     
-    override public func viewDidLayoutSubviews() {
+    override open func viewDidLayoutSubviews() {
         reloadTabBar()
     }
     
@@ -52,12 +51,12 @@ public class TabBarContainerViewController: UIViewController {
     
     func getBundle(cellIdentifier: String) -> Bundle {
         if cellIdentifier == TabBarCollectionViewCellTitle.resusableName || cellIdentifier == TabBarCollectionViewCellImage.resusableName || cellIdentifier == TabBarCollectionViewCellTitleWithImage.resusableName {
-            return Bundle(for: self.classForCoder)
+            return Bundle(for: TabBarContainerViewController.classForCoder())
         }
-        return Bundle(for: NSObject.fromClassName(className:cellIdentifier)!)
+           return Bundle(for: NSObject.fromClassName(className:cellIdentifier)!)
     }
     
-    func setupTabBar(viewControllers : [UIViewController]) {
+    public func setupTabBar(viewControllers : [UIViewController]) {
         self.viewControllers = viewControllers
         topBarView.dataSource = self
         topBarView.delegate = self
@@ -97,7 +96,7 @@ public class TabBarContainerViewController: UIViewController {
         
     }
     
-    func reloadTabBar() {
+    public func reloadTabBar() {
         setupSlideScrollView()
         layoutCells()
         setTabBarIndicator()
@@ -149,7 +148,7 @@ public class TabBarContainerViewController: UIViewController {
 
     }
     
-    func moveTo(page: Int, animated: Bool = true) {
+    public func moveTo(page: Int, animated: Bool = true) {
         currentPage = page
         self.scrollToPage(page: page, animated: animated)
         updateIndicatorView()
