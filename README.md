@@ -1,17 +1,21 @@
 
-#SwiftTopTabBar
+# SwiftTopTabBar
 - crearte tab bar like android material design
 - default cells (title ,image,image with title)
 - Crearte Custome Cell
 - Spport RTL
+
 ![ezgif com-video-to-gif-2](https://user-images.githubusercontent.com/11280137/60376099-dc6e1e00-9a0c-11e9-99ee-029ea9596193.gif)
 ![Screen Shot 2019-06-29 at 1 22 14 
+
 using pods
+
 ```bash
   pod 'SwiftTopTabBar' 
 ```
 
 ## Usage
+
 ![Screen Shot 2019-06-29 at 1 05 16    AM](https://user-images.githubusercontent.com/11280137/60375714-d7a86a80-9a0a-11e9-93bf-89d59b05bcd1.png)
 
 
