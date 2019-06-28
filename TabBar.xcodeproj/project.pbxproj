@@ -91,6 +91,28 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E51E460122C6DB4000CDC60A /* views */ = {
+			isa = PBXGroup;
+			children = (
+				C38A131922BF8403006043A3 /* CustomTabViewCell.xib */,
+				C38A131822BF8403006043A3 /* CustomTabViewCell.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		E51E460222C6DB5D00CDC60A /* ViewControllers  */ = {
+			isa = PBXGroup;
+			children = (
+				E5E384FB22995096008F5BF2 /* TabBarViewController.swift */,
+				E5E38516229981F3008F5BF2 /* SlideViewControllerWithTitle.swift */,
+				C38A131422BF684C006043A3 /* SlideViewControllerWithImage.swift */,
+				C38A131622BF768A006043A3 /* SlideViewControllerTitleWithImage.swift */,
+				E507D0B322BD43B1000D3A4D /* ExampleViewController.swift */,
+				C38A131C22BF8A6A006043A3 /* SlideViewControllerCustomTabCell.swift */,
+			);
+			path = "ViewControllers ";
+			sourceTree = "<group>";
+		};
 		E5E384ED22995096008F5BF2 = {
 			isa = PBXGroup;
 			children = (
@@ -112,20 +134,14 @@
 		E5E384F822995096008F5BF2 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				E51E460222C6DB5D00CDC60A /* ViewControllers  */,
+				E51E460122C6DB4000CDC60A /* views */,
 				E5E3850B2299509F008F5BF2 /* SourceCode */,
 				E5E384F922995096008F5BF2 /* AppDelegate.swift */,
-				E5E384FB22995096008F5BF2 /* TabBarViewController.swift */,
 				E5E384FD22995096008F5BF2 /* Main.storyboard */,
-				E5E38516229981F3008F5BF2 /* SlideViewControllerWithTitle.swift */,
-				C38A131422BF684C006043A3 /* SlideViewControllerWithImage.swift */,
-				C38A131622BF768A006043A3 /* SlideViewControllerTitleWithImage.swift */,
-				C38A131C22BF8A6A006043A3 /* SlideViewControllerCustomTabCell.swift */,
 				E5E3850022995098008F5BF2 /* Assets.xcassets */,
 				E5E3850222995098008F5BF2 /* LaunchScreen.storyboard */,
 				E5E3850522995098008F5BF2 /* Info.plist */,
-				E507D0B322BD43B1000D3A4D /* ExampleViewController.swift */,
-				C38A131822BF8403006043A3 /* CustomTabViewCell.swift */,
-				C38A131922BF8403006043A3 /* CustomTabViewCell.xib */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";

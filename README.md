@@ -1,5 +1,6 @@
 
 # SwiftTopTabBar
+
 - crearte tab bar like android material design
 - default cells (title ,image,image with title)
 - Crearte Custome Cell
@@ -18,8 +19,13 @@ using pods
 
 ![Screen Shot 2019-06-29 at 1 05 16    AM](https://user-images.githubusercontent.com/11280137/60375714-d7a86a80-9a0a-11e9-93bf-89d59b05bcd1.png)
 
-
 ```swift
+import UIKit
+
+// extend  TabBarContainerViewController
+class TabBarViewController: TabBarContainerViewController{
+}
+
 // call in viewDidLoad()
    func setupTabBar() {
         self.topBarView = barView
