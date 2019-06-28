@@ -33,7 +33,6 @@ class TabBarViewController: TabBarContainerViewController{
         self.tabBarWidth = 70
         self.indicatorHeight = 3
         self.selectedIndicatorColor = UIColor.green
-
         self.moveTo(page: 0)
     }
 ```
