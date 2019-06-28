@@ -7,7 +7,6 @@
 - Spport RTL
 
 ![ezgif com-video-to-gif-2](https://user-images.githubusercontent.com/11280137/60376099-dc6e1e00-9a0c-11e9-99ee-029ea9596193.gif)
-![Screen Shot 2019-06-29 at 1 22 14 
 
 using pods
 
