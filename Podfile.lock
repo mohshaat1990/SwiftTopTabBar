@@ -1,0 +1,16 @@
+PODS:
+  - LocalizableLib (0.1.7)
+
+DEPENDENCIES:
+  - LocalizableLib (~> 0.1.7)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - LocalizableLib
+
+SPEC CHECKSUMS:
+  LocalizableLib: 5cd046f66c99efdcb63a7aab91983f1a36c53984
+
+PODFILE CHECKSUM: 602cb9ef88d64e1b5210eed7124f00a87c04aa92
+
+COCOAPODS: 1.7.0.beta.3
