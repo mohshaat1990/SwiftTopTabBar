@@ -38,6 +38,9 @@ class TabBarViewController: TabBarContainerViewController{
 ```
 
 ```swift
+// implement  TabBarDataSourse
+class SlideViewControllerWithTitle: UIViewController, TabBarDataSourse  {
+}
 // to configure tab bar cell  in slide 
   func cellTabName() -> String {
         return TabBarCollectionViewCellImage.resusableName
