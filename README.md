@@ -29,8 +29,8 @@ class TabBarViewController: TabBarContainerViewController{
    func setupTabBar() {
         self.topBarView = barView
         self.barcontainer = container
-        self.tabBarShouldFillWidth = tabShouldFillWidth
-        self.tabBarWidth = 70
+        self.tabBarShouldFillWidth = true
+      //  self.tabBarWidth = 70  // tabBarShouldFillWidth should be false
         self.indicatorHeight = 3
         self.selectedIndicatorColor = UIColor.green
         self.moveTo(page: 0)
